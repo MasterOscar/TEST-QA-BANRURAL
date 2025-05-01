@@ -1,5 +1,6 @@
 Lista de Errores encontrados
 **🔧** Error 1: Número aleatorio decimal y fuera del rango
+
 Problema: El número aleatorio se generaba con Math.random() * 10, lo que producía decimales y un rango incorrecto.
 Solución: Se cambió por Math.floor(Math.random() * 100) + 1 para generar un número entero entre 1 y 100.
 
@@ -33,7 +34,7 @@ Solución: Se corrigió a Math.floor(Math.random() * 100) + 1.
 
 
 🧪 Pruebas realizadas
-✅ Prueba de entrada válida e inválida (enteros vs texto).
+✅ Prueba de entrada válida e inválida.
 ✅ Prueba de límite de intentos (10).
 ✅ Prueba de mensajes: mayor, menor, ganar, perder.
 ✅ Prueba de colores: negro, rojo, verde según el estado.
